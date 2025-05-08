@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Services</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html" class="pink-border">Home</a></li>
+                <li><a href="services.html" class="pink-border active">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Our Services</h1>
+        <div class="services-container">
+            <div class="service-card">
+                <img src="https://via.placeholder.com/150" alt="Web Design" />
+                <h2>Web Design</h2>
+                <p>Modern, responsive websites that work on all devices.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="https://via.placeholder.com/150" alt="SEO" />
+                <h2>SEO Optimization</h2>
+                <p>Boost your rankings and get more traffic with expert SEO strategies.</p>
+            </div>
+            <section id="faq" style="max-width: 800px; margin: 50px auto; font-family: sans-serif;">
+              <h2 style="text-align: center;">Frequently Asked Questions</h2>
+            
+              <div class="faq">
+                <h3 class="faq-question">What types of paper do you offer?</h3>
+                <div class="faq-answer" style="display: none;">We offer glossy, matte, recycled, and textured papers in multiple sizes.</div>
+              </div>
+            
+              <div class="faq">
+                <h3 class="faq-question">Can I print custom images or text on mugs and t-shirts?</h3>
+                <div class="faq-answer" style="display: none;">Yes! Upload your design or choose from our templates — we handle the rest.</div>
+              </div>
+            
+              <div class="faq">
+                <h3 class="faq-question">Do you offer printing for office uniforms or party clothing?</h3>
+                <div class="faq-answer" style="display: none;">We provide bulk and one-off printing for events, parties, and corporate needs.</div>
+              </div>
+            
+              <div class="faq">
+                <h3 class="faq-question">What file formats do you accept for custom designs?</h3>
+                <div class="faq-answer" style="display: none;">JPEG, PNG, and PDF files. Use high-resolution images for best results.</div>
+              </div>
+            
+              <div class="faq">
+                <h3 class="faq-question">How long does it take to process an order?</h3>
+                <div class="faq-answer" style="display: none;">Standard orders take 3–5 business days. Rush service is available.</div>
+              </div>
+            </section>
+            
+            <script>
+              document.querySelectorAll('.faq-question').forEach(q => {
+                q.style.cursor = 'pointer';
+                q.addEventListener('click', () => {
+                  const answer = q.nextElementSibling;
+                  const isVisible = answer.style.display === 'block';
+                  answer.style.display = isVisible ? 'none' : 'block';
+                });
+              });
+            </script>
+            <div class="service-card">
+                <img src="https://via.placeholder.com/150" alt="App Development" />
+                <h2>App Development</h2>
+                <p>We build user-friendly apps for both iOS and Android platforms.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website</p>
+    </footer>
+</body>
+</html>

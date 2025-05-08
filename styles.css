@@ -1,0 +1,57 @@
+
+.pink-border {
+    border: 2px solid hotpink;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.pink-border:hover {
+    background-color: #ffe6f0;
+}
+
+nav ul li a.active {
+    background-color: #ffe6f0;
+    font-weight: bold;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.service-card {
+    background-color: white;
+    border: 3px solid hotpink;
+    border-radius: 10px;
+    width: 280px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.service-card h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-card p {
+    color: #555;
+}
